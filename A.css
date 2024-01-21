@@ -1,0 +1,50 @@
+body{
+  background-color: grey;
+}
+h1{
+  color: crimson;
+  display: inline-block;
+  margin:10px;
+  padding: 15px;
+  border: 1px solid violet;
+  border-radius: 10px;
+  position: relative;
+  top: 90px;
+  left: 200px;
+  animation: hed1 2s;
+  
+}
+@keyframes hed1{
+  0%{left:0px;
+    color: orange;
+  }
+  100%{left:200px}
+}
+.button{
+  display:block;
+  color:crimson;
+  width: 150px;
+  height: 50px;
+  position: relative;
+  top: 100px;
+  left: 45%;
+  background-color: gray;
+  margin: 10px;
+  border-style: solid;
+  border-radius: 5px;
+  border-image:linear-gradient(90deg, rgba(4,218,120,0.9743589743589743) , rgba(0,178,255,1) , rgba(255,0,159,0.9925213654836019) );
+  border-image-slice: 1;
+  box-shadow: 2px 2px 5px red,-2px -2px 5px blue;
+  animation: bor 2s infinite ;
+  animation-direction: alternate;
+}
+@keyframes bor{ 
+  0%{border-image:linear-gradient(90deg,rgba(4,218,120,0.9743589743589743),rgba(0,178,255,1), rgba(255,0,159,0.9925213654836019));
+ border-image-slice:1 ;
+box-shadow: 2px 2px 5px blue,-2px -2px 5px red;
+}
+100%{border-image:linear-gradient(90deg,rgba(255,0,159,0.9925213654836019), rgba(0,178,255,1),rgba(4,218,120,0.9743589743589743));
+  border-image-slice:1 ;
+box-shadow: 2px 2px 5px red,-2px -2px 5px blue;
+}}
+
